@@ -1,0 +1,59 @@
+extends layout
+
+block content
+  include partials/_nav
+  // Page Header
+  header.masthead(style="background-image: url('images/homepage.png');background-position:top")
+    .container
+      .row
+        .col-lg-8.col-md-10.mx-auto
+          .site-heading 
+            h1 Programming Blog
+            span.subheading My latest experiences in the programming world
+  // Main Content
+  .container
+    .row
+      .col-lg-8.col-md-10.mx-auto
+        .blog-post(id="contenedor_de_articulos")
+          a(href='post.html')
+            h2.post_title
+              | Failure is not an option
+            h3.post_subtitle
+              | Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+          p.post_meta
+            | Posted by
+            a(href='#') Start Bootstrap
+            |               on July 8, 2017
+        hr
+        // Pager
+        .clearfix
+          a.btn.btn-secondary.float-right(href='#') Older Posts →
+  hr
+  // Footer
+  footer
+    .container
+      .row
+        .col-lg-8.col-md-10.mx-auto
+          ul.list-inline.text-center
+            li.list-inline-item
+              a(href='#')
+                span.fa-stack.fa-lg
+                  i.fa.fa-circle.fa-stack-2x
+                  i.fa.fa-twitter.fa-stack-1x.fa-inverse
+            li.list-inline-item
+              a(href='#')
+                span.fa-stack.fa-lg
+                  i.fa.fa-circle.fa-stack-2x
+                  i.fa.fa-facebook.fa-stack-1x.fa-inverse
+            li.list-inline-item
+              a(href='#')
+                span.fa-stack.fa-lg
+                  i.fa.fa-circle.fa-stack-2x
+                  i.fa.fa-github.fa-stack-1x.fa-inverse
+          p.copyright.text-muted Copyright © Your Website 2017
+  // Bootstrap core JavaScript
+  script(src='vendor/jquery/jquery.min.js')
+  script(src='vendor/popper/popper.min.js')
+  script(src='vendor/bootstrap/js/bootstrap.min.js')
+  // Custom scripts for this template
+  script(src='javascripts/clean-blog.min.js')

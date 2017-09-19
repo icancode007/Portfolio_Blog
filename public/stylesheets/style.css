@@ -1,0 +1,25 @@
+nav .container #nav-left {
+  color: #b8b894;
+  font-family: 'Paytone One', sans-serif;
+  text-decoration: none;
+  width: 480px; }
+@media screen and (max-width: 500px) {
+  nav .container #tituloProg {
+    display: none; } }
+nav .container #nav-left:hover {
+  color: black; }
+nav .container #navbarResponsive #nav-right li a {
+  color: #e0e0d1; }
+nav .container #navbarResponsive #nav-right li a:hover {
+  color: black;
+  font-size: 15px; }
+
+.container .row .col-lg-8 #contenedor_de_articulos a h2, .container .row .col-lg-8 #contenedor_de_articulos a h3 {
+  font-family: 'Paytone One', sans-serif;
+  color: #b8b894; }
+
+.container .row .col-lg-8 #contenedor_de_articulos a:hover h2, .container .row .col-lg-8 #contenedor_de_articulos a:hover h3 {
+  font-family: 'Paytone One', sans-serif;
+  color: black; }
+
+/*# sourceMappingURL=style.css.map */
