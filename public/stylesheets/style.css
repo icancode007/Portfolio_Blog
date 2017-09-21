@@ -14,12 +14,20 @@ nav .container #navbarResponsive #nav-right li a:hover {
   color: black;
   font-size: 15px; }
 
-.container .row .col-lg-8 #contenedor_de_articulos a h2, .container .row .col-lg-8 #contenedor_de_articulos a h3 {
-  font-family: 'Paytone One', sans-serif;
-  color: #b8b894; }
+.container .row .col-lg-8 #contenedor_de_articulos a {
+  text-decoration: none !important; }
+  .container .row .col-lg-8 #contenedor_de_articulos a h2, .container .row .col-lg-8 #contenedor_de_articulos a h3 {
+    font-family: 'Paytone One', sans-serif;
+    color: #b8b894; }
 
 .container .row .col-lg-8 #contenedor_de_articulos a:hover h2, .container .row .col-lg-8 #contenedor_de_articulos a:hover h3 {
   font-family: 'Paytone One', sans-serif;
+  color: black; }
+
+footer .container .row .col-lg-8 #icon-list li a {
+  color: #b8b894; }
+
+footer .container .row .col-lg-8 #icon-list li a:hover {
   color: black; }
 
 /*# sourceMappingURL=style.css.map */
