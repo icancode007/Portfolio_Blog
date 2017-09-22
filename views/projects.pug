@@ -18,22 +18,40 @@ block content
         h4 | |
         h4   
             span(id="BigV") V
+
+    #noteFormobile(style="display:none")
+         h4  
+            span(id="redNote") Note:
+            | click on the links to follow the project's url
+         h4 | |
+         h4 | |
+         h4   
+            span(id="BigV") V
     .row(id="projectRow")
         .col
             h1 Bettergram
-        .col
+        .col(id="incasepc")
             .d-flex.justify-content-end(id='thecFbox')
-                .technology
+                .p-2.technology
                     h5 Thecnologies:
-                .technology
+                .p-2.technology
                     img.portrait(src='images/technologies/express.png')
-                .technology
+                .p-2.technology
                     img.portrait(src='images/technologies/node.png')
-                .technology
+                .p-2.technology
                     img.portrait(src='images/technologies/sequelize.png')
-                .technology
+                .p-2.technology
                     img.portrait(src='images/technologies/aws.png')
-                    
+    .mobile-control(id="incasemobile" style="display:none")
+        h6 Thecnologies:        
+        p
+            | ExpressJs
+        p
+            | Nodejs
+        p
+            | Sequelize
+        p
+            | Aws
     hr
     .row
         .col-sm-4(id="portraitContainer")
@@ -51,26 +69,38 @@ block content
                     li.feature(data-url='feed') Feed
                     li.feature(data-url="profile") Profile
                     li.feature(data-url="comment") Comment
-        .col-sm-6
+        .col-sm-6(id="gifContainer")
             img(src="images/Bettergram/like.gif", alt="NO FIlE" id="projectImg")
-    
+    .row(id="link_to_project" style="display:none") 
+        a(href="https://github.com/icancode007/instagramclone") Bettergram/Github
+
     hr
     .row(id="projectRow2")
         .col
             h1 Articles Blog
-        .col
+        .col(id="incasepc2")
             .d-flex.justify-content-end(id='thecFbox2')
-                .technology
+                .p-2.technology
                     h5 Thecnologies:
-                .technology
+                .p-2.technology
                     img.portrait(src='images/technologies/ruby.png')
-                .technology
+                .p-2.technology
                     img.portrait(src='images/technologies/rails.png')
-                .technology
+                .p-2.technology
                     img.portrait(src='images/technologies/sqlite.png')
-                .technology
+                .p-2.technology
                     img.portrait(src='images/technologies/gravatar.png')
-                    
+    .mobile-control(id="incasemobile2" style="display:none")
+        h6 Thecnologies:        
+        p
+            | Ruby
+        p
+            | Rails
+        p
+            | SQlite
+        p
+            | Gravatar        
+                
     hr
     .row
         .col-sm-4(id="portraitContainer2")
@@ -88,10 +118,9 @@ block content
                     li.feature2(data-url='auth') Authenticate
                     li.feature2(data-url="uservsadmin") UserVsAdmin
                     li.feature2(data-url="articledelete") ArticleDelete
-        .col-sm-6
+        .col-sm-6(id="gifContainer2")
             img(src="images/AlphaBlog/articlecreate.gif", alt="NO FIlE" id="projectImg2")
-
-        hr
- hr
+    .row(id="link_to_project2" style="display:none") 
+        a(href="#") ArticlesBlog/GitHub
  //Footer
  include partials/_footer
