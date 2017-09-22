@@ -1,5 +1,5 @@
 nav .container #nav-left {
-  color: #b8b894;
+  color: black;
   font-family: 'Paytone One', sans-serif;
   text-decoration: none;
   width: 480px; }
@@ -7,11 +7,11 @@ nav .container #nav-left {
   nav .container #tituloProg {
     display: none; } }
 nav .container #nav-left:hover {
-  color: black; }
+  color: #b8b894; }
 nav .container #navbarResponsive #nav-right li a {
-  color: #e0e0d1; }
+  color: black; }
 nav .container #navbarResponsive #nav-right li a:hover {
-  color: black;
+  color: #e0e0d1;
   font-size: 15px; }
 
 .container .row .col-lg-8 #contenedor_de_articulos a {
@@ -29,5 +29,61 @@ footer .container .row .col-lg-8 #icon-list li a {
 
 footer .container .row .col-lg-8 #icon-list li a:hover {
   color: black; }
+
+#aboutIntro .negritas {
+  font-weight: bold; }
+
+#aboutList .listright {
+  margin-left: 80px;
+  margin-top: 15px;
+  font-size: 28px; }
+  #aboutList .listright .li-content {
+    font-size: 20px; }
+
+#portraitContainer .blurContainer {
+  position: relative;
+  width: 100%;
+  height: 300px; }
+  #portraitContainer .blurContainer .imgReference {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 300px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 8px; }
+  #portraitContainer .blurContainer .description {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); }
+    #portraitContainer .blurContainer .description .text {
+      color: black;
+      font-size: 20px;
+      font-weight: bolder; }
+#portraitContainer .blurContainer:hover .imgReference {
+  opacity: 0.3;
+  filter: blur(2px) brightness(55%);
+  box-shadow: 0 0 56px 0 #757506; }
+#portraitContainer .blurContainer:hover .description {
+  opacity: 1; }
+
+#projectModels {
+  display: flex; }
+  #projectModels .featureList {
+    margin-top: 30px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 18px; }
+    #projectModels .featureList .feature {
+      margin-top: 10px; }
+
+#projectImg {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px; }
 
 /*# sourceMappingURL=style.css.map */

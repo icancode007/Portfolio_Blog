@@ -1,0 +1,35 @@
+extends layout
+
+block content
+ //Page Header
+ header.masthead(style="background-image: url('images/programming.jpg'); filter:grayscale(100%);")
+  .container
+    .row
+        .col-8.col-md-10.mx-auto
+            .page-heading
+                h1 My Projects
+ // Main Content
+ .container
+    h1 Bettergram
+    hr
+    .row
+        .col-sm-4(id="portraitContainer")
+            .blurContainer
+                img.imgReference(src="images/Bghomepage.png" )
+                .description 
+                    .text
+                        |An Instagram Clone application that contains some of the features that the real instagram has. Some of these features are likes,comments,profiles and others.
+        
+        .col-sm-2(id="projectModels")
+                ul.featureList
+                    li.feature(data-url="likes") Like
+                    li.feature(data-url="post") Post
+                    li.feature(data-url="profile2") Profile
+                    li.feature(data-url="Authentication") Authentication
+        .col-sm-6
+            img(src="images/Bettergram/likes.gif", alt="NO FIlE" id="projectImg")
+
+
+ hr
+ //Footer
+ include partials/_footer
