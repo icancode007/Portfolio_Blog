@@ -2,7 +2,7 @@ extends layout
 
 block content
  //Page Header
- header.masthead(style="background-image: url('images/programming.jpg'); filter:grayscale(100%);")
+ header.masthead(style="background-image: url('images/projects.png'); filter:grayscale(80%);")
   .container
     .row
         .col-8.col-md-10.mx-auto
@@ -10,7 +10,30 @@ block content
                 h1 My Projects
  // Main Content
  .container
-    h1 Bettergram
+    #note
+        h4  
+            span(id="redNote") Note:
+            | Hover on the Projects Imgs for a quick Description, you can also click on the features to preview their functionality.
+        h4 | |
+        h4 | |
+        h4   
+            span(id="BigV") V
+    .row(id="projectRow")
+        .col
+            h1 Bettergram
+        .col
+            .d-flex.justify-content-end(id='thecFbox')
+                .technology
+                    h5 Thecnologies:
+                .technology
+                    img.portrait(src='images/technologies/express.png')
+                .technology
+                    img.portrait(src='images/technologies/node.png')
+                .technology
+                    img.portrait(src='images/technologies/sequelize.png')
+                .technology
+                    img.portrait(src='images/technologies/aws.png')
+                    
     hr
     .row
         .col-sm-4(id="portraitContainer")
@@ -21,15 +44,54 @@ block content
                         |An Instagram Clone application that contains some of the features that the real instagram has. Some of these features are likes,comments,profiles and others.
         
         .col-sm-2(id="projectModels")
-                ul.featureList
-                    li.feature(data-url="likes") Like
-                    li.feature(data-url="post") Post
-                    li.feature(data-url="profile2") Profile
-                    li.feature(data-url="Authentication") Authentication
+                ul.featureList 
+                    span.fTitle Features
+                    li.feature(data-url="like") Like 
+                    li.feature(data-url="post") Post 
+                    li.feature(data-url='feed') Feed
+                    li.feature(data-url="profile") Profile
+                    li.feature(data-url="comment") Comment
         .col-sm-6
-            img(src="images/Bettergram/likes.gif", alt="NO FIlE" id="projectImg")
+            img(src="images/Bettergram/like.gif", alt="NO FIlE" id="projectImg")
+    
+    hr
+    .row(id="projectRow2")
+        .col
+            h1 Articles Blog
+        .col
+            .d-flex.justify-content-end(id='thecFbox2')
+                .technology
+                    h5 Thecnologies:
+                .technology
+                    img.portrait(src='images/technologies/ruby.png')
+                .technology
+                    img.portrait(src='images/technologies/rails.png')
+                .technology
+                    img.portrait(src='images/technologies/sqlite.png')
+                .technology
+                    img.portrait(src='images/technologies/gravatar.png')
+                    
+    hr
+    .row
+        .col-sm-4(id="portraitContainer2")
+            .blurContainer
+                img.imgReference(src="images/articlespg.png" )
+                .description 
+                    .text
+                        |A Blog of articles that can be classified. It also features an Admin profile that has power over user and its articles.
+        
+        .col-sm-2(id="projectModels2")
+                ul.featureList 
+                    span.fTitle Features 
+                    li.feature2(data-url="articlecreate") Article
+                    li.feature2(data-url="userdelete") DeleteUser
+                    li.feature2(data-url='auth') Authenticate
+                    li.feature2(data-url="uservsadmin") UserVsAdmin
+                    li.feature2(data-url="articledelete") ArticleDelete
+        .col-sm-6
+            img(src="images/AlphaBlog/articlecreate.gif", alt="NO FIlE" id="projectImg2")
 
-
+        hr
  hr
  //Footer
  include partials/_footer

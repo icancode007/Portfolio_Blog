@@ -121,7 +121,39 @@ footer{
 }
 
 //Projects Page
-#portraitContainer{
+
+#projectRow,#projectRow2{
+    margin-top:120px;
+}
+
+#note{
+    h4 {
+        color: #757506;
+        text-align: center;
+            #redNote{
+        color:red;
+        margin-right: 4px;
+        }
+        #BigV{
+            font-size: 45px;
+        }
+    }
+
+}
+#thecFbox,#thecFbox2{
+    .technology{
+        h5 {
+            margin-top: 15px;
+        }
+        .portrait{
+            width: 85px;
+            height:50px;
+            margin-left: 10px;
+            margin-right: 5px;
+        }
+    }
+}
+#portraitContainer,#portraitContainer2{
     .blurContainer{
         position: relative;
         width: 100%;
@@ -163,18 +195,66 @@ footer{
 #projectModels{
         display: flex;
         .featureList{
+            .fTitle{
+                color:#757506;
+                font-size: 28px;
+                
+            }
             margin-top: 30px;
             list-style: none;
             font-weight: bold;
             font-size: 18px;
             .feature{
                 margin-top:10px;
-          }
+                text-align: center;
+                }
+            .feature:hover{
+                font-size: 24px;
+                text-decoration: underline coral;
+            }
         }
 }
- #projectImg{
+#projectModels2{
+        display: flex;
+        .featureList{
+            .fTitle{
+                color:#757506;
+                font-size: 28px;
+                
+            }
+            margin-top: 30px;
+            list-style: none;
+            font-weight: bold;
+            font-size: 18px;
+        .feature2{
+                margin-top:10px;
+                text-align: center;
+                }
+            .feature2:hover{
+                font-size: 20px;
+                text-decoration: underline coral;
+            }
+        }
+}
+ #projectImg, #projectImg2{
         width:100%;
         height: 300px;
         border-radius: 8px;
     }
-
+//Contact Me
+#contactme_{
+    list-style: none;
+    font-size: 35px;
+    text-align: center;
+    .decor{
+        text-decoration: underline;
+    }
+    li{
+        margin-top: 10px;
+        font-size:25px;
+        font-weight: bolder;
+        a:hover{
+            color:#757506;  
+        }    
+    }
+}

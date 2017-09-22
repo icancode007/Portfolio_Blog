@@ -14,19 +14,17 @@ block content
     .row
       .col-lg-8.col-md-10.mx-auto
         .blog-post(id="contenedor_de_articulos")
-          a(href='post.html')
+          a(href='#')
             h2.post_title
-              | Failure is not an option
+              | " Ever tried, ever failed, no matter, try again, fail again, fail better. " Beckett
             h3.post_subtitle
-              | Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+              | keep failing until you succedd.
           p.post_meta
-            | Posted by
-            a(href='#') Start Bootstrap
-            |               on July 8, 2017
+              |on July 26, 2017
         hr
         // Pager
-        .clearfix
+        .clearfix(hidden)
           a.btn.btn-secondary.float-right(href='#') Older Posts →
-  hr
+  hr(hidden)
   //Footer
   include partials/_footer

@@ -40,11 +40,31 @@ footer .container .row .col-lg-8 #icon-list li a:hover {
   #aboutList .listright .li-content {
     font-size: 20px; }
 
-#portraitContainer .blurContainer {
+#projectRow, #projectRow2 {
+  margin-top: 120px; }
+
+#note h4 {
+  color: #757506;
+  text-align: center; }
+  #note h4 #redNote {
+    color: red;
+    margin-right: 4px; }
+  #note h4 #BigV {
+    font-size: 45px; }
+
+#thecFbox .technology h5, #thecFbox2 .technology h5 {
+  margin-top: 15px; }
+#thecFbox .technology .portrait, #thecFbox2 .technology .portrait {
+  width: 85px;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 5px; }
+
+#portraitContainer .blurContainer, #portraitContainer2 .blurContainer {
   position: relative;
   width: 100%;
   height: 300px; }
-  #portraitContainer .blurContainer .imgReference {
+  #portraitContainer .blurContainer .imgReference, #portraitContainer2 .blurContainer .imgReference {
     opacity: 1;
     display: block;
     width: 100%;
@@ -52,7 +72,7 @@ footer .container .row .col-lg-8 #icon-list li a:hover {
     transition: .5s ease;
     backface-visibility: hidden;
     border-radius: 8px; }
-  #portraitContainer .blurContainer .description {
+  #portraitContainer .blurContainer .description, #portraitContainer2 .blurContainer .description {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -60,15 +80,15 @@ footer .container .row .col-lg-8 #icon-list li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%); }
-    #portraitContainer .blurContainer .description .text {
+    #portraitContainer .blurContainer .description .text, #portraitContainer2 .blurContainer .description .text {
       color: black;
       font-size: 20px;
       font-weight: bolder; }
-#portraitContainer .blurContainer:hover .imgReference {
+#portraitContainer .blurContainer:hover .imgReference, #portraitContainer2 .blurContainer:hover .imgReference {
   opacity: 0.3;
   filter: blur(2px) brightness(55%);
   box-shadow: 0 0 56px 0 #757506; }
-#portraitContainer .blurContainer:hover .description {
+#portraitContainer .blurContainer:hover .description, #portraitContainer2 .blurContainer:hover .description {
   opacity: 1; }
 
 #projectModels {
@@ -78,12 +98,49 @@ footer .container .row .col-lg-8 #icon-list li a:hover {
     list-style: none;
     font-weight: bold;
     font-size: 18px; }
+    #projectModels .featureList .fTitle {
+      color: #757506;
+      font-size: 28px; }
     #projectModels .featureList .feature {
-      margin-top: 10px; }
+      margin-top: 10px;
+      text-align: center; }
+    #projectModels .featureList .feature:hover {
+      font-size: 24px;
+      text-decoration: underline coral; }
 
-#projectImg {
+#projectModels2 {
+  display: flex; }
+  #projectModels2 .featureList {
+    margin-top: 30px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 18px; }
+    #projectModels2 .featureList .fTitle {
+      color: #757506;
+      font-size: 28px; }
+    #projectModels2 .featureList .feature2 {
+      margin-top: 10px;
+      text-align: center; }
+    #projectModels2 .featureList .feature2:hover {
+      font-size: 20px;
+      text-decoration: underline coral; }
+
+#projectImg, #projectImg2 {
   width: 100%;
   height: 300px;
   border-radius: 8px; }
+
+#contactme_ {
+  list-style: none;
+  font-size: 35px;
+  text-align: center; }
+  #contactme_ .decor {
+    text-decoration: underline; }
+  #contactme_ li {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bolder; }
+    #contactme_ li a:hover {
+      color: #757506; }
 
 /*# sourceMappingURL=style.css.map */

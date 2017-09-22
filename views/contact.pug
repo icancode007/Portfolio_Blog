@@ -1,0 +1,28 @@
+extends layout
+
+block content
+ //Page Header
+ header.masthead(style="background-image: url('images/contactMe.png'); filter:grayscale(100%);")
+  .container
+    .row
+        .col-8.col-md-10.mx-auto
+            .page-heading
+                h1 Contact Me
+
+ // Main Content
+ .container
+    .list
+        ul(id="contactme_")  
+            span.decor Jose F Rodriguez
+            li 
+                i.fa.fa-mobile(style="margin-right:5px") 
+                |347-257-4146
+            li
+                i.fa.fa-map-marker(style="margin-right:5px")
+                |NY, New York
+            li 
+                a(href="mailto:franny26rguez@gmail.com")
+                    i.fa.fa-envelope(style="margin-right:5px")
+                    |franny26rguez@gmail.com
+    hr 
+ include partials/_footer
