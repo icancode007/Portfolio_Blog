@@ -85,6 +85,7 @@ footer{
         }
     }
 }
+
 footer{
     .container{
         .row{
@@ -100,17 +101,49 @@ footer{
         }
     }
 }
+@keyframes rotateIcons {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+footer {
+    .container {
+        .row {
+            .col-lg-8 {
+                #icon-list {
+                    li {
+                        a{
+                            span{
+                               i:hover{
+                                 animation: rotateIcons 2s linear infinite;
+                               } 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+ 
+
 //About Page
 
 #aboutIntro{
     .negritas{
+        text-align: center;
         font-weight: bold;
     }
 }
-
-#aboutList{
+.aboutH4{
+    text-align: center;
+    box-shadow:1px 1px 1px 1px #757506;
+}
+#aboutList{    
     .listright{
-        margin-left: 80px;
         margin-top:15px;
         font-size: 28px;
     
@@ -118,6 +151,7 @@ footer{
             font-size: 20px;
         }
     }
+  
 }
 
 //Projects Page
@@ -219,6 +253,9 @@ footer{
     #noteFormobile{
         display: block !important;
     }
+    #aboutList{
+        margin-right: 20px;
+    }
     #link_to_project,#link_to_project2{
         text-align: center;
         display: block !important;
@@ -244,6 +281,7 @@ footer{
     #gifContainer,#gifContainer2{
         display: none;
     }
+
 }
 
 
@@ -297,6 +335,9 @@ footer{
         height: 300px;
         border-radius: 8px;
     }
+
+
+    
 //Contact Me
 #contactme_{
     list-style: none;
