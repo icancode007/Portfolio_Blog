@@ -3,7 +3,7 @@ nav .container #nav-left {
   font-family: 'Paytone One', sans-serif;
   text-decoration: none;
   width: 480px; }
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 500px) {
   nav .container #tituloProg {
     display: none; } }
 nav .container #nav-left:hover {
@@ -112,7 +112,7 @@ footer .container .row .col-lg-8 #icon-list li a span i:hover {
 #link_to_project a:hover, #link_to_project2 a:hover {
   color: #757506; }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 960px) {
   #incasemobile, #incasemobile2 {
     display: block !important; }
 
@@ -132,6 +132,8 @@ footer .container .row .col-lg-8 #icon-list li a span i:hover {
     text-align: center;
     display: block !important; }
 
+  #projectRow .col h1 {
+    text-align: center; }
   #projectRow #incasepc {
     display: none; }
   #projectRow #incasemobile {
@@ -145,6 +147,11 @@ footer .container .row .col-lg-8 #icon-list li a span i:hover {
 
   #gifContainer, #gifContainer2 {
     display: none; } }
+@media screen and (max-width: 1000px) {
+  #projectModels,
+  #projectModels2 {
+    display: flex;
+    justify-content: center; } }
 #projectModels {
   display: flex; }
   #projectModels .featureList {
