@@ -29,12 +29,14 @@ const Post = models.post;
 //   })
 //   res.render('index');
 // });
-router.post('/add',(req,res)=>{
+router.post('/post',(req,res)=>{
   const newpost = Post.build({
     body:req.body.body,
     alias:req.body.alias
-  }).save().then((lognewPost)=>{console.log( lognewPost)})
-  res.redirect('/');
+  }).save().then((lognewPost)=>{
+    res.redirect( '/' );
+  })
+  
 })
 router.get('/about', (req,res,next)=>{
   res.render('about');

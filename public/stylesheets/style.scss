@@ -21,14 +21,8 @@ nav{
                     a{
                         color:black;
                     }
-                }
-            }
-        }
-        #navbarResponsive{
-            #nav-right{
-                li{
-                    a:hover{
-                        color:#e0e0d1;
+                    a:hover {
+                        color: #e0e0d1;
                         font-size: 15px;
                     }
                 }
@@ -50,26 +44,27 @@ nav{
                         
                     }
                 }
+                  a:hover {
+                      h2,
+                      h3 {
+                          font-family: 'Paytone One', sans-serif;
+                          color: black;
+                      }
+                  }
             }
         }
-    }
-}
-
-.container{
-    .row{
-        .col-lg-8{
-            #contenedor_de_articulos{
-                a:hover{
-                    h2,h3{
-                        font-family:'Paytone One', sans-serif;
-                        color: black;
-                       
-                    }
+        .col-lg-6{
+            form{
+                display: flex;
+                flex-direction: column;
+                button{
+                    align-self: center;
                 }
             }
         }
     }
 }
+
 footer{
     .container{
         .row{
@@ -109,27 +104,16 @@ footer{
         transform: rotate(360deg);
     }
 }
-footer {
-    .container {
-        .row {
-            .col-lg-8 {
-                #icon-list {
-                    li {
-                        a{
-                            span{
-                               i:hover{
-                                 animation: rotateIcons 2s linear infinite;
-                               } 
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+            //form
+            
+form .btn-dark{
+    margin: 0 auto;
 }
- 
 
+i:hover{
+    animation: rotateIcons 2s linear infinite;
+} 
+            
 //About Page
 
 #aboutIntro{

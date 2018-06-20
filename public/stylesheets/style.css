@@ -19,10 +19,15 @@ nav .container #navbarResponsive #nav-right li a:hover {
   .container .row .col-lg-8 #contenedor_de_articulos a h2, .container .row .col-lg-8 #contenedor_de_articulos a h3 {
     font-family: 'Paytone One', sans-serif;
     color: #b8b894; }
-
-.container .row .col-lg-8 #contenedor_de_articulos a:hover h2, .container .row .col-lg-8 #contenedor_de_articulos a:hover h3 {
+.container .row .col-lg-8 #contenedor_de_articulos a:hover h2,
+.container .row .col-lg-8 #contenedor_de_articulos a:hover h3 {
   font-family: 'Paytone One', sans-serif;
   color: black; }
+.container .row .col-lg-6 form {
+  display: flex;
+  flex-direction: column; }
+  .container .row .col-lg-6 form button {
+    align-self: center; }
 
 footer .container .row .col-lg-8 #icon-list li a {
   color: #b8b894; }
@@ -35,7 +40,10 @@ footer .container .row .col-lg-8 #icon-list li a:hover {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
-footer .container .row .col-lg-8 #icon-list li a span i:hover {
+form .btn-dark {
+  margin: 0 auto; }
+
+i:hover {
   animation: rotateIcons 2s linear infinite; }
 
 #aboutIntro .negritas {
