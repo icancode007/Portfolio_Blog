@@ -1,15 +1,8 @@
 var express = require('express');
 var router = express.Router();
-//Require PG and Sequelize For Migrations
+
 const models = require('../models');
 const Post = models.post;
-
-// const testpost = Post.build({
-//   body:'Its fun when you put together something that you thought you could no do',
-//   alias:'Yayy!'
-// }).save().then((newpost)=>{
-//   console.log(newpost);
-// })
 
 
  router.get( '/', function ( req, res ) {
@@ -19,16 +12,8 @@ const Post = models.post;
      } );
    } );
  } );
-
-/* GET home page. */
-// router.get( '/', ( req, res, next ) => {
-//   const allPost = Post.findAll()
-//     .then((res,posts)=>{
-//       // res.render( 'index',posts );
-//       res.send(posts);
-//   })
-//   res.render('index');
-// });
+ 
+//Post Form Handler Route
 router.post('/post',(req,res)=>{
   const newpost = Post.build({
     body:req.body.body,
