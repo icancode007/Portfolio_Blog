@@ -26,20 +26,31 @@ block content
         .clearfix(hidden)
           a.btn.btn-secondary.float-right(href='#') Older Posts →
     .row
-      .col-lg-8.col-md-10.mx-auto
-         each post in posts
-            div - #{post.body}
+      .col-lg-8.col-md-10.mx-auto#paraPost 
+         each post in posts 
+            div
+              h6 
+                |- #{post.body} 
+              small 
+                |#{post.alias}
+    .row
+      .col-lg-8.col-md-10
+        #commentToggle
+          h4 Click to Comment 
+           span <
+        
+
     .row
         .col-lg-3
         .col-lg-6
-          <form method="post" action="/post">
+          <form id="postForm" method="post" action="/post">
             <div class="form-group">
               <input name="alias" type="text" class="form-control" placeholder="Name">
             </div>
             <div class="form-group">
               <textarea name="body" class="form-control" rows="3" placeholder="Add on to my quote"></textarea>
             </div>
-            <button type="submit" class="btn btn-dark">Dark</button>
+            <button type="submit" class="btn btn-dark">Post</button>
           </form>
         .col-lg-3
   hr(hidden)

@@ -6,12 +6,10 @@ const Post = models.post;
 
 
  router.get( '/', function ( req, res ) {
-   Post.findAll().then( function ( posts ) {
-     res.render( 'index', {
-       posts: posts
-     } );
-   } );
- } );
+   Post.findAll().then( function (posts) {
+     res.render( 'index', {posts} );
+    });
+ });
  
 //Post Form Handler Route
 router.post('/post',(req,res)=>{

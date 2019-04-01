@@ -14,24 +14,41 @@ nav .container #navbarResponsive #nav-right li a:hover {
   color: #e0e0d1;
   font-size: 15px; }
 
-.container .row .col-lg-8 #contenedor_de_articulos a {
+#contenedor_de_articulos a {
   text-decoration: none !important; }
-  .container .row .col-lg-8 #contenedor_de_articulos a h2, .container .row .col-lg-8 #contenedor_de_articulos a h3 {
+  #contenedor_de_articulos a h2, #contenedor_de_articulos a h3 {
     font-family: 'Paytone One', sans-serif;
     color: #b8b894; }
-.container .row .col-lg-8 #contenedor_de_articulos a:hover h2,
-.container .row .col-lg-8 #contenedor_de_articulos a:hover h3 {
+#contenedor_de_articulos a:hover h2, #contenedor_de_articulos a:hover h3 {
   font-family: 'Paytone One', sans-serif;
   color: black; }
-.container .row .col-lg-6 form {
+
+.col-lg-6 form {
   display: flex;
   flex-direction: column; }
-  .container .row .col-lg-6 form button {
+  .col-lg-6 form button {
     align-self: center; }
+
+#paraPost div {
+  box-shadow: 1px 1px 1px;
+  margin: 8px; }
+  #paraPost div small {
+    display: flex;
+    font-family: 'Paytone One', sans-serif;
+    opacity: 0.6;
+    justify-content: flex-end;
+    font-size: x-small;
+    padding-right: 5%; }
+
+#commentToggle {
+  display: flex;
+  justify-content: center; }
+
+#commentToggle:hover {
+  animation: ninetyDeg 2s linear infinite; }
 
 footer .container .row .col-lg-8 #icon-list li a {
   color: #b8b894; }
-
 footer .container .row .col-lg-8 #icon-list li a:hover {
   color: black; }
 
@@ -40,6 +57,15 @@ footer .container .row .col-lg-8 #icon-list li a:hover {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+@keyframes ninetyDeg {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(5deg); }
+  50% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-5deg); } }
 form .btn-dark {
   margin: 0 auto; }
 
