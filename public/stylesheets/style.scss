@@ -165,7 +165,31 @@ i:hover{
   
 }
 
-//Projects Page
+@mixin bg-settings {
+    background-attachment:scroll;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover
+
+}
+//Backgrounds
+#abouthead {
+    background: url(/images/aboutwallp.png) no-repeat center center;
+    filter:grayscale(80%);
+    @include bg-settings;    
+}
+
+#homehead {
+    background: url(/images/homepage.png) no-repeat center top;
+    @include bg-settings;
+}
+
+#contacthead {
+    background: url(/images/contactMe.png) no-repeat center center;
+    filter:grayscale(100%);
+    @include bg-settings;
+}
 
 #projectRow,#projectRow2{
     margin-top:120px;
@@ -247,7 +271,27 @@ i:hover{
     }
 }
 //Media Queries
+
 @media screen and (max-width:960px){
+
+    //For BackGrounds
+    #abouthead{
+         background: url(/images/aboutMobile.png) no-repeat center center;
+         filter:grayscale(80%);
+         @include bg-settings
+    }
+
+    #homehead {
+        background: url(/images/homeMobile.png) no-repeat center top;
+        @include bg-settings;
+    }
+
+    #contacthead {
+        background: url(/images/contactMobile.png) no-repeat center center;
+        filter: grayscale(100%);
+        @include bg-settings;
+    }
+
     #incasemobile,#incasemobile2{
         display: block !important;
     }
