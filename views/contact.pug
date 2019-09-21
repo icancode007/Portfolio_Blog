@@ -16,7 +16,7 @@ block content
             span.decor Jose F Rodriguez
             li 
                 i.fa.fa-mobile(style="margin-right:5px") 
-                |347-257-4146
+                |213-294-5686
             li
                 i.fa.fa-map-marker(style="margin-right:5px")
                 |NY, New York
@@ -25,4 +25,33 @@ block content
                     i.fa.fa-envelope(style="margin-right:5px")
                     |franny26rguez@gmail.com
     hr 
+
+ //- Contact Form Modal   
+    #contactMe.modal.fade(tabindex='-1', role='dialog')
+    .modal-dialog(role='document')
+        .modal-content
+        .modal-header
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+            h4.modal-title Modal title
+        .modal-body
+            form(name='contactform', method='post', action='contactFormHandler.php')
+            table(width='450px')
+                tbody
+                tr
+                    td(valign='top')
+                    label(for='email') Email Address *
+                    td(valign='top')
+                    input.form-control(type='text', name='email', placeholder='Enter email')
+                tr
+                    td(valign='top')
+                    label(for='comments') Comments *
+                    td(valign='top')
+                    textarea.form-control(name='comments', maxlength='1000', rows='3', placeholder='message')
+                tr
+                    td(colspan='2', style='text-align:center;')
+                    input(type='submit', value='Submit')
+                    a(href='http://www.frodriguezportfolio.herokuapp.com/public/php/contactFormHandler.php') Email Form
+        .modal-footer
+            button.btn.btn-default(type='button', data-dismiss='modal') Close
  include partials/_footer
