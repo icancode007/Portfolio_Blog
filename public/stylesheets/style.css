@@ -22,6 +22,8 @@ nav .container #navbarResponsive #nav-right li a:hover {
 #contenedor_de_articulos a:hover h2, #contenedor_de_articulos a:hover h3 {
   font-family: 'Paytone One', sans-serif;
   color: black; }
+#contenedor_de_articulos .postTitle {
+  font-weight: bold; }
 
 .col-lg-6 form {
   display: flex;
@@ -201,7 +203,6 @@ i:hover {
       margin-top: 10px;
       text-align: center; }
     #projectModels .featureList .feature:hover {
-      font-size: 24px;
       text-decoration: underline coral; }
 
 #projectModels2 {
@@ -219,7 +220,6 @@ i:hover {
       margin-top: 10px;
       text-align: center; }
     #projectModels2 .featureList .feature2:hover {
-      font-size: 20px;
       text-decoration: underline coral; }
 
 #projectImg, #projectImg2 {

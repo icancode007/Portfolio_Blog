@@ -1,4 +1,3 @@
-//HOMEPAGE CSS
 nav{
     .container{
        #nav-left{
@@ -31,7 +30,6 @@ nav{
     }
 }
  
-
 #contenedor_de_articulos{
     a{
         text-decoration: none !important;
@@ -46,6 +44,11 @@ nav{
             color: black;
         }
     }
+
+    .postTitle {
+        font-weight: bold
+    }
+
 }
 
 
@@ -320,7 +323,6 @@ i:hover{
                 text-align: center;
                 }
             .feature:hover{
-                font-size: 24px;
                 text-decoration: underline coral;
             }
         }
@@ -343,7 +345,6 @@ i:hover{
                 text-align: center;
                 }
             .feature2:hover{
-                font-size: 20px;
                 text-decoration: underline coral;
             }
         }
